@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- bootstrap  css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!---======= CSS ========-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- sidebar qismi chap tomonfagi -->
+    <nav>
+      <div class="logo-name">
+        <div class="logo-image">
+          <img src="./images/sement1.jpg" alt="" />
+        </div>
+        <a href="./index.html">
+          <span class="logo_name"> Panel </span>
+        </a>
+      </div>
+      <div class="menu-items">
+        <ul class="nav-links">
+          <li>
+            <a href="./products.html">
+              <i class="uil uil-shopping-cart-alt active"></i>
+              <span class="link-name">Mahsultlar</span>
+            </a>
+          </li>
+          <li>
+            <a href="./section.html">
+              <i class="uil uil-web-section"></i>
+              <span class="link-name">Bo'limlar</span>
+            </a>
+          </li>
+          <li>
+            <a href="./news.html">
+              <i class="uil uil-newspaper"></i>
+              <span class="link-name">Yangiliklar </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="uil uil-comparison"></i>
+              <span class="link-name">Hamkorlar</span>
+            </a>
+          </li>
+          <li>
+            <a href="./creteproducts.html">
+              <i class="uil uil-create-dashboard"></i>
+              <span class="link-name">Mahsulot yaratish</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="logout-mode">
+          <li>
+            <a href="#">
+              <i class="uil uil-signout"></i>
+              <span class="link-name">Chiqish</span>
+            </a>
+          </li>
+          <li class="mode">
+            <a href="#">
+              <i class="uil uil-moon"></i>
+              <span class="link-name">Qorong'u rejim</span>
+            </a>
+            <div class="mode-toggle">
+              <span class="switch"> </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- urta qismi productsni  -->
+    <div class="dashboard">
+      <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+        <div class="search-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+        <select class="form-select1">
+          <option value="?lang=uz">uzb</option>
+          <option value="?lang=ru">rus</option>
+          <option value="?lang=en">eng</option>
+        </select>
+        <i class="uil uil-user-circle"></i>
+      </div>
+      <div class="products-container">
+        <div class="container-fluid">
+          <div class="row  justify-content-center">
+            <h1>Mahsulotlar</h1>
+            <div class="col-xl-4  col-md-8"> 
+              <div class="add-products-inputs">
+              <form class="products-form">
+                <h2>Mahsulotlar qo'shish</h2>
+                <label for="name" id="name">Ismi</label>
+                <input type="text" id="name" name="name" />
+                <label for="specialist" id="specialist">Mutaxasisligi</label>
+                <input type="text" id="specialist" name="specialist" />
+                <label for="fulltext">Qisqa Matn</label>
+                <input type="text" name="fulltext" />
+                <div class="image-blok-border">
+                  <div class="image-preview" id="imagePreview">
+                    <img
+                      src=""
+                      alt="Image Preview"
+                      class="image-preview__image"
+                    />
+                    <span class="image-preview__defaul_text">600x600</span>
+                    <input type="file" name="inpFile" id="inpFile" hidden />
+                    <i class="bos-file uil uil-pen"></i>
+                  </div>
+                  <button class="btn form-btn">Tasdiqlash</button>
+                </div>
+              </form>
+            </div></div>
+            <div class="col-xl-8  col-md-8 mt-xl-0 mt-4">
+              <div class="products-show">
+                <table>
+                  <tr>
+                    <th>Foto</th>
+                    <th>ismi</th>
+                    <th>Mutaxasisligi</th>
+                    <th>Harakat</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        width="60px"
+                        src="https://cdn.resfu.com/media/img_news/afp_fr_c103a332ef81fbabcd2537f990c59c56a08d8ef7.jpg?size=1000x&lossy=1"
+                        alt=""
+                      />
+                    </td>
+                    <td>Komil</td>
+                    <td>web dasturlashni</td>
+                    <td>
+                      <!-- Example single danger button -->
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="btn-products btn dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Info
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        width="60px"
+                        src="./images/captain-america-the-first-avenger-CPNCC5.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>Komil</td>
+                    <td>web dasturlashni</td>
+                    <td>
+                      <!-- Example single danger button -->
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="btn-products btn dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Info
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -8,7 +8,9 @@
   text-decoration: none;
   font-family: "unicons-line";
 }
-
+html{
+  overflow-x: hidden;
+}
 :root {
   /* =========== Colors =======*/
   --primary-color: #0e4bf1;
@@ -88,6 +90,7 @@ nav {
   background-color: var(--panel-color);
   border: 1px solid var(--border-color);
   transition: var(--tran-05);
+  z-index: 10;
 }
 nav.close {
   width: 73px;
@@ -188,6 +191,18 @@ body.dark .nav-links li a:hover .link-name {
   display: flex;
   align-items: center;
 }
+.menu-items  .cp-b{
+  border: none;
+  height: 20px;
+  margin-left: 10px;
+  background-color: transparent;
+  color: var(--black-light-color);
+}
+
+nav.close .menu-items .li-drop  .btn-group{
+  display: none;
+}
+
 
 .menu-items .dropdown-item{
   height: 20px;
@@ -257,10 +272,11 @@ body.dark .switch::before {
 
 .dashboard {
   position: relative;
-  left: 250px;
+  /* left: 250px; */
   background-color: var(--panel-color);
   min-height: 100vh;
-  width: calc(100% - 250px);
+  /* width: calc(100% - 250px); */
+  width: 100%;
   padding-left: 10px 14px;
   transition: var(--tran-05);
 }
@@ -458,7 +474,7 @@ table tr::before {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 110px 15px 0;
+  padding: 110px 15px 30px;
 }
 .products-container .add-products-inputs {
   background: var(--panel-color);

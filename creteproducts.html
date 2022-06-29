@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- sidebar qismi chap tomonfagi -->
-    <nav>
+     <nav>
       <div class="logo-name">
         <div class="logo-image">
           <img src="./images/sement1.jpg" alt="" />
@@ -44,14 +44,27 @@
               <span class="link-name">Bo'limlar</span>
             </a>
           </li>
-          <li>
+          <li class="li-drop">
             <a href="./news.html">
               <i class="uil uil-newspaper"></i>
               <span class="link-name">Yangiliklar </span>
             </a>
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              <button
+                type="button"
+                class="dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="./creteproducts.html">Yangilik yaratish</a></li>
+              </ul>
+            </div>
           </li>
           <li>
-            <a href="#">
+            <a href="./partners.html">
               <i class="uil uil-comparison"></i>
               <span class="link-name">Hamkorlar</span>
             </a>
@@ -100,6 +113,10 @@
       <div class="products-container">
         <div class="container-fluid">
           <h1>Add Product</h1>
+          <p class="new-p-a">
+            <a href="./index.html">Bosh sahifa</a> >
+            <a href="./news.html">Yangiliklar</a>
+          </p>
           <div class="news-block">
             <h2 class="cP-h2">Yangiliklar qo'shish</h2>
             <div class="row justify-content-lg-start justify-content-center">

@@ -68,3 +68,4 @@ const form = document.querySelector(".bos-file")
 form.addEventListener("click", () => {
   inpFile.click()
 })
+

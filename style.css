@@ -184,6 +184,33 @@ body.dark .nav-links li a:hover .link-name {
 .nav-links {
   padding-left: 0px;
 }
+.li-drop{
+  display: flex;
+  align-items: center;
+}
+
+.menu-items .dropdown-item{
+  height: 20px;
+  padding:  0rem ;
+  font-size: 15px;
+  color: var(--black-light-color);
+}
+.menu-items .dropdown-item::before{
+  display: none;
+}
+.dropdown-menu{
+  transform: translate3d(-45px, 27px, 0px) !important;
+  padding: 0rem;
+  border: none;
+
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+  border: none;
+  height: 20px;
+  margin-left: 10px;
+  background-color: transparent;
+  color: var(--black-light-color);
+}
 .menu-items .logout-mode {
   padding-top: 10px;
   border-top: 1px solid var(--border-color);
@@ -290,7 +317,7 @@ nav.close ~ .dashboard .top {
 .top .form-select1 {
   outline: none;
   font-size: 15px;
-  padding: 7px 10px;
+  padding: 5px 10px;
   border-radius: 5px;
   margin-right: 20px;
   border: 1px solid var(--select-color);
@@ -598,7 +625,9 @@ table tr::before {
 
  
 }
-
+.activity .activity-data {
+  overflow-y: scroll;
+}
 .activity-data  .news-table .btn-news{
   color: #01d8c6;
   border-radius: 20px;
@@ -639,6 +668,7 @@ table tr::before {
 
 }
 
+
 .add-products-inputs .products-form .img-p{
   margin-bottom: -18px;
   color: var(--black-light-color);
@@ -656,6 +686,22 @@ table tr::before {
 .add-products-right form{
   display: flex;
   flex-direction: column;
+}
+.dash-content .new-p-a {
+  color: var(--black-light-color);
+  gap: 10px;
+}
+.new-p-a a{
+  font-size: 18px;
+  color: var(--black-light-color);
+  align-items: center;
+  text-decoration: none;
+  margin-right: 5px;
+
+ 
+}
+.new-p-a a:nth-child(2){
+  margin: 0 5px 0 0;
 }
 
 .news-block .add-products-right form label{
@@ -700,6 +746,9 @@ table tr::before {
   color: var(--text-color);
 }
 /* /// format moslashtirish */
+
+
+
 @media (max-width: 1000px) {
   nav {
     width: 73px;

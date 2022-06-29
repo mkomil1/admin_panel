@@ -204,7 +204,7 @@ body.dark .nav-links li a:hover .link-name {
   border: none;
 
 }
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+.menu-items .cp-b{
   border: none;
   height: 20px;
   margin-left: 10px;

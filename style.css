@@ -886,7 +886,7 @@ table tr::before {
   }
   
   nav .menu-items .li-drop .btn-group {
-    opacity: 1;
+    opacity: 0;
   }
   nav.close .menu-items .li-drop .btn-group {
     opacity: 1;
